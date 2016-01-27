@@ -1,0 +1,51 @@
+npm install
+tsd install
+also need to create config maria stuff
+	username-root
+	no pass
+to scale use a connection pool so that you don't have a funnel for conenction requests
+	don't do too many though
+
+line in provisioning script to allow node to listening to
+a low port
+	Otherwise only available to root
+	
+Not good to put controllers where you set up the app
+Sometimes people call their controllers directory other
+things
+
+node lets you privatize global variables so not
+all js files can be seen by each other, unless
+you actively choose to export it
+
+exports is a blank empty js file by default
+
+routers can be great for encapsulating a set of APIs
+
+RESTful APIs
+-get is straightforward
+-post is what the user is trying to insert
+	In this case, adding a story to a forum or something
+	
+controllers have everything to do with various URL api stuff
+other examples could be users, users/me, etc
+
+interaction with database happens in a model, to further
+seperate types of interection
+
+models kind of use classes, like Java
+
+arguments have been made saying that since Http is stateless,
+functional programming is actually the way to go, rather
+than instantiating an object and forcing it to have a state
+
+backticks (this symbol : `) lets you have multiple line strings
+
+you can let express know about errors by using the next function
+
+to copy everything into the schema: mysql -u root < sql/schema.sql
+
+A promise is something that returns an async operation
+
+Every function has a .then function which is what
+happens when things work
